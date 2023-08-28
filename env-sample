@@ -1,0 +1,5 @@
+#cp env-sample .env
+MYSQL_ROOT_PASSWORD="123456"
+MY_DATABASE="database1"
+MYSQL_USER="db_user"
+MYSQL_PASSWORD=""
