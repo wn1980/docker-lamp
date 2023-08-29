@@ -5,7 +5,10 @@ networks:
   default:
     name: my-network
     external: true
-            
+
+volumes:
+  db_space:
+           
 services:
 
     db:
@@ -13,8 +16,8 @@ services:
       container_name: lamp_mariadb
       restart: unless-stopped
       init: true
-      # volumes:
-      #   - "./db:/var/lib/mysql:rw"
+      volumes:
+        - "db_space:/var/lib/mysql"
       environment:
         MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
 
