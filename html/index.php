@@ -1,4 +1,5 @@
 <?php
+
 $host = 'db';
 $user = 'root';
 $pass = '123456';
@@ -10,4 +11,5 @@ if ($conn->connect_error) {
 } else {
     echo "Connected to MySQL server successfully!";
 }
+
 ?>
